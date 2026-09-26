@@ -1,0 +1,13 @@
+# Sistema
+.DS_Store
+
+# Temporales / build
+dist/
+mizu-web.zip
+
+# Originales sin usar (la web usa los .webp)
+mizulogo2.png
+logo-header.png
+img/productos/**/*.png
+img/productos/**/*.jpg
+img/productos/**/*.jpeg

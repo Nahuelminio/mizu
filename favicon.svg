@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    .glyph { fill: #3A3427; font-family: "Hiragino Sans", "Noto Sans JP", "Yu Gothic", sans-serif; font-size: 60px; }
+    @media (prefers-color-scheme: dark) { .glyph { fill: #EBE2D2; } }
+  </style>
+  <text class="glyph" x="32" y="51" text-anchor="middle">水</text>
+</svg>

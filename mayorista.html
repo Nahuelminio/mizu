@@ -1,0 +1,159 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>MIZU · Lista Mayorista</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&family=Noto+Serif+JP:wght@300;400&display=swap">
+<link rel="stylesheet" href="styles.css?v=30">
+
+<style>
+  /* --- extras solo para la vista mayorista --- */
+  .may-hero {
+    text-align: center;
+    padding: 8.5rem clamp(1.25rem,6vw,5rem) 2.5rem;
+    position: relative; overflow: hidden;
+  }
+  .may-hero .badge {
+    display: inline-block; font-family: "Jost", sans-serif; font-weight: 400;
+    text-transform: uppercase; letter-spacing: .3em; font-size: .6rem;
+    color: var(--cream); background: var(--deep);
+    padding: .5em 1.1em; border-radius: 999px; margin-bottom: 1.4rem;
+  }
+  .may-hero h1 {
+    font-family: "Cormorant Garamond", serif; font-weight: 400;
+    font-size: clamp(2.8rem, 8vw, 4.6rem); line-height: 1; margin: 0;
+    text-shadow: 0 1px 0 var(--emboss-hi), 0 -1px 1px var(--emboss-lo);
+  }
+  .may-hero p { color: var(--ink-soft); max-width: 44ch; margin: 1.1rem auto 0; font-size: 1.02rem; }
+  .may-hero .jp-water {
+    position: absolute; right: -1rem; top: 50%; transform: translateY(-50%);
+    font-family: "Noto Serif JP", serif; font-size: clamp(9rem,26vw,20rem);
+    color: color-mix(in srgb, var(--ink) 5%, transparent); line-height: .7; pointer-events: none; z-index: 0;
+  }
+  .may-hero > * { position: relative; z-index: 1; }
+
+  .may-bar {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: .7rem 2.4rem;
+    margin: 0 auto clamp(2.5rem,6vw,3.5rem); padding-bottom: 2rem;
+    border-bottom: 1px solid var(--line);
+    font-family: "Jost", sans-serif; text-transform: uppercase; letter-spacing: .2em;
+    font-size: .64rem; color: var(--ink-soft); text-align: center;
+  }
+  .may-bar span { position: relative; }
+  .may-bar span:not(:first-child)::before {
+    content: "水"; font-family: "Noto Serif JP", serif; letter-spacing: 0;
+    position: absolute; left: -1.45rem; top: 50%; transform: translateY(-50%);
+    color: var(--water-deep); opacity: .5; font-size: .85em;
+  }
+  /* precio mayorista destacado */
+  .prod-price .may-label {
+    display: block; font-family: "Jost", sans-serif; font-weight: 400;
+    text-transform: uppercase; letter-spacing: .2em; font-size: .5rem;
+    color: var(--deep); margin-bottom: .1rem;
+  }
+  .prod-add { white-space: nowrap; }
+</style>
+
+<nav id="nav" class="scrolled">
+  <a href="index.html" class="brand lockup lockup--nav" aria-label="MIZU">
+    <span class="ll-letter">M</span>
+    <span class="ll-mid"><span class="ll-i"></span><span class="jp ll-sui">水</span></span>
+    <span class="ll-letter">ZU</span>
+  </a>
+  <div class="nav-links" id="nav-links">
+    <a href="index.html">Tienda</a>
+    <a href="#pedido">Hacer pedido</a>
+    <a href="https://wa.me/5493764653908?text=Hola%20MIZU!%20Soy%20revendedor%2Fa%20%F0%9F%A4%8D" class="nav-ig" target="_blank" rel="noopener" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.6-5.4A8.5 8.5 0 1 1 21 11.5z"/><path d="M8.5 9.5c0 4 2.5 6 6 6"/></svg>
+    </a>
+  </div>
+</nav>
+
+<header class="may-hero">
+  <span class="jp-water jp" aria-hidden="true">水</span>
+  <span class="badge">Solo revendedores</span>
+  <h1>Lista mayorista</h1>
+  <p>Precios exclusivos para revendedores MIZU. Skincare coreano 100% original, coordinamos tu pedido por WhatsApp.</p>
+</header>
+
+<section id="mayorista" style="padding-top:0">
+  <div class="wrap">
+    <div class="may-bar">
+      <span>Envíos a todo el país</span>
+      <span>100% productos originales</span>
+      <span>Precios mayoristas</span>
+    </div>
+    <div class="prod-grid" id="prod-grid"></div>
+  </div>
+</section>
+
+<section class="connect" id="pedido">
+  <div class="wrap reveal in">
+    <span class="eyebrow">Revendedores</span>
+    <h2>Hacé tu pedido<br>mayorista</h2>
+    <p>Escribinos por WhatsApp con los productos y cantidades. Te confirmamos stock, envío y forma de pago.</p>
+    <a class="btn" href="https://wa.me/5493764653908?text=Hola%20MIZU!%20Soy%20revendedor%2Fa%20y%20quiero%20hacer%20un%20pedido%20mayorista%20%F0%9F%A4%8D" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+    <p class="connect-alt">O escribinos por <a href="https://instagram.com/mizu.skinco">Instagram</a></p>
+  </div>
+</section>
+
+<footer>
+  <span class="foot-kanji jp" aria-hidden="true">水</span>
+  <div class="foot-grid">
+    <div class="foot-about">
+      <div class="foot-brand lockup" aria-label="MIZU">
+        <span class="ll-letter">M</span>
+        <span class="ll-mid"><span class="ll-i"></span><span class="jp ll-sui">水</span></span>
+        <span class="ll-letter">ZU</span>
+      </div>
+      <p>Korean skincare inspirado en la naturaleza. Posadas, Misiones.</p>
+      <a class="foot-ig" href="https://instagram.com/mizu.skinco">@mizu.skinco</a>
+    </div>
+    <div class="foot-col">
+      <h4>Revendedores</h4>
+      <a href="#mayorista">Lista mayorista</a>
+      <a href="#pedido">Hacer pedido</a>
+      <a href="index.html">Tienda minorista</a>
+    </div>
+    <div class="foot-col">
+      <h4>Contacto</h4>
+      <a href="https://instagram.com/mizu.skinco">Instagram</a>
+      <a href="https://wa.me/5493764653908?text=Hola%20MIZU!%20Soy%20revendedor%2Fa%20%F0%9F%A4%8D" target="_blank" rel="noopener">WhatsApp</a>
+      <span class="foot-loc">Posadas, Misiones 🇦🇷</span>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 MIZU · みず</span>
+    <span>Lista mayorista · revendedores</span>
+  </div>
+</footer>
+
+<script>
+  const WA = '5493764653908';
+  fetch('productos.json', { cache: 'no-store' })
+    .then(r => r.json())
+    .then(data => {
+      const products = (data && data.mayorista) || [];
+      document.getElementById('prod-grid').innerHTML = products.map(p => {
+        const msg = encodeURIComponent(`Hola MIZU! Soy revendedor/a y quiero pedir: ${p.name} de ${p.brand} (mayorista ${p.price})`);
+        return `
+        <article class="prod reveal in">
+          <div class="prod-fig"><img src="img/productos/${p.img}" alt="${p.brand} ${p.name}" loading="lazy"></div>
+          <span class="prod-cat">${p.cat} · ${p.brand}</span>
+          <h3>${p.name}</h3>
+          <p>${p.unit ? 'Precio ' + p.unit + '.' : '&nbsp;'}</p>
+          <div class="prod-foot">
+            <span class="prod-price"><span class="may-label">Mayorista</span>${p.price}</span>
+            <a class="prod-add" href="https://wa.me/${WA}?text=${msg}" target="_blank" rel="noopener">Pedir</a>
+          </div>
+        </article>`;
+      }).join('');
+    })
+    .catch(() => {
+      document.getElementById('prod-grid').innerHTML = '<p style="grid-column:1/-1;text-align:center;color:var(--ink-soft)">No se pudieron cargar los productos.</p>';
+    });
+</script>

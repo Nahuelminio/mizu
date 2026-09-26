@@ -1,0 +1,600 @@
+{
+  "minorista": [
+    {
+      "brand": "ANUA",
+      "cat": "Limpieza",
+      "name": "Rice Enzyme Cleansing Powder",
+      "desc": "Polvo limpiador enzimático con arroz. Ilumina y suaviza la textura.",
+      "price": "$ 40.000",
+      "img": "anua/imagen1_anua_rice_enzyme_brightening_cleansing_powder_imagen1-Photoroom.webp"
+    },
+    {
+      "brand": "Biodance",
+      "cat": "Tónico",
+      "name": "Cera-Nol Gel Toner Pads",
+      "desc": "Discos de tónico en gel con ceramidas. Hidratan y calman (60 u.).",
+      "price": "$ 44.000",
+      "img": "biodance/biodance-cera-nol-gel-Photoroom.webp"
+    },
+    {
+      "brand": "SKIN1004",
+      "cat": "Tratamiento",
+      "name": "Centella Ampoule",
+      "desc": "Ampolla intensiva con centella pura de Madagascar. Calma y repara.",
+      "price": "$ 56.500",
+      "img": "centella/madagascar-centella-Photoroom.webp"
+    },
+    {
+      "brand": "ANUA",
+      "cat": "Tratamiento",
+      "name": "Peach 70+ Niacin Serum",
+      "desc": "Serum con 70% de durazno y niacinamida. Ilumina y unifica el tono.",
+      "price": "$ 40.000",
+      "img": "anua/157784-a-peach-70-niacin-serum-30ml-Photoroom.webp"
+    },
+    {
+      "brand": "Celimax",
+      "cat": "Tratamiento",
+      "name": "Retinal Shot Booster",
+      "desc": "Booster con retinal que reafirma y suaviza líneas finas (15 ml).",
+      "price": "$ 37.500",
+      "img": "images-Photoroom.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tratamiento",
+      "name": "Deep Vita C Capsule Cream",
+      "desc": "Crema con vitamina C y niacinamida para una piel luminosa y uniforme.",
+      "price": "$ 48.000",
+      "img": "medicube/medicube-deep-vita-c-capsule-cream-b9d7f7818f5b22cbcf17574471340736-1024-1024-Photoroom.webp"
+    },
+    {
+      "brand": "Dr.Althea",
+      "cat": "Hidratación",
+      "name": "345 Relief Cream",
+      "desc": "Crema calmante con niacinamida y centella para piel sensible.",
+      "price": "$ 46.000",
+      "img": "drALTHEA345REFIEF-Photoroom.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Hidratación",
+      "name": "Collagen Jelly Cream",
+      "desc": "Crema-jelly con colágeno. Hidrata y aporta elasticidad (50 ml).",
+      "price": "$ 30.500",
+      "img": "medicube/medicube-collagen-jelly-cream-24c8d6754e8bec386617575368873121-1024-1024-Photoroom.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tratamiento",
+      "name": "PDRN Collagen Gua Sha",
+      "desc": "Crema con PDRN y colágeno + gua sha para cuello y contorno.",
+      "price": "$ 67.000",
+      "img": "medicube/PDRN_00_8ff884c9-74a9-495e-917f-d03f776b38aa-Photoroom.webp"
+    },
+    {
+      "brand": "Biodance",
+      "cat": "Mascarilla",
+      "name": "Bio-Collagen Real Deep Mask",
+      "desc": "Mascarilla de bio-colágeno que se adhiere a la piel. Hidrata y reafirma. Precio por unidad.",
+      "price": "$ 12.000",
+      "img": "biodance/collagenmask4-Photoroom.webp"
+    },
+    {
+      "brand": "SKIN1004",
+      "cat": "Kit",
+      "name": "Centella Travel Kit",
+      "desc": "Rutina completa en tamaño viaje: limpieza, tónico, ampolla y crema.",
+      "price": "$ 61.500",
+      "img": "centella/CENTELLATRAVELKIT-2-Photoroom.webp"
+    },
+    {
+      "brand": "SKIN1004",
+      "cat": "Kit",
+      "name": "Hyalu-Cica Travel Kit",
+      "desc": "Kit de viaje hidratante con ácido hialurónico y centella.",
+      "price": "$ 60.500",
+      "img": "centella/centella-kit-1-Photoroom.webp"
+    }
+  ],
+  "mayorista": [
+    {
+      "brand": "SKIN1004",
+      "cat": "Tratamiento",
+      "name": "Centella Ampoule 50ml",
+      "price": "$ 49.000",
+      "img": "centella/madagascar-centella-Photoroom.webp"
+    },
+    {
+      "brand": "SKIN1004",
+      "cat": "Kit",
+      "name": "Centella Travel Kit",
+      "price": "$ 54.000",
+      "img": "centella/CENTELLATRAVELKIT-2-Photoroom.webp"
+    },
+    {
+      "brand": "SKIN1004",
+      "cat": "Kit",
+      "name": "Hyalu-Cica Travel Kit",
+      "price": "$ 53.000",
+      "img": "centella/centella-kit-1-Photoroom.webp"
+    },
+    {
+      "brand": "ANUA",
+      "cat": "Limpieza",
+      "name": "Rice Enzyme Cleansing Powder",
+      "price": "$ 34.500",
+      "img": "anua/imagen1_anua_rice_enzyme_brightening_cleansing_powder_imagen1-Photoroom.webp"
+    },
+    {
+      "brand": "ANUA",
+      "cat": "Tratamiento",
+      "name": "Peach 70+ Niacin Serum 30ml",
+      "price": "$ 34.500",
+      "img": "anua/157784-a-peach-70-niacin-serum-30ml-Photoroom.webp"
+    },
+    {
+      "brand": "ANUA",
+      "cat": "Tratamiento",
+      "name": "Azelaic Acid 10 Hyaluron 30ml",
+      "price": "$ 53.000",
+      "img": "anua/anua-azelaic-acid-10-hyaluron-redness-soothing-serum-30mlanuakiokii-and-494531-Photoroom.webp"
+    },
+    {
+      "brand": "ANUA",
+      "cat": "Tratamiento",
+      "name": "Collagen Retinol Gua Sha Cream 80ml",
+      "price": "$ 69.500",
+      "img": "anua/collagen-retinol-gua-sha.webp"
+    },
+    {
+      "brand": "Biodance",
+      "cat": "Tónico",
+      "name": "Cera-Nol Gel Toner Pads",
+      "price": "$ 38.500",
+      "img": "biodance/biodance-cera-nol-gel-Photoroom.webp"
+    },
+    {
+      "brand": "Biodance",
+      "cat": "Mascarilla",
+      "name": "Bio-Collagen Real Deep Mask",
+      "price": "$ 8.000",
+      "unit": "por unidad",
+      "img": "biodance/collagenmask4-Photoroom.webp"
+    },
+    {
+      "brand": "Celimax",
+      "cat": "Tratamiento",
+      "name": "Retinal Shot Tightening Booster 15ml",
+      "price": "$ 33.000",
+      "img": "images-Photoroom.webp"
+    },
+    {
+      "brand": "Celimax",
+      "cat": "Kit",
+      "name": "Pore Dark Spot Brightening Kit",
+      "price": "$ 36.500",
+      "img": "celimax/Celimax_Pore_Dark_Spot_Brightening_Kit_Skin_Cupid_CONCEPT_SHOT-Photoroom.webp"
+    },
+    {
+      "brand": "Dr.Althea",
+      "cat": "Hidratación",
+      "name": "345 Relief Cream 50ml",
+      "price": "$ 40.000",
+      "img": "drALTHEA345REFIEF-Photoroom.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Limpieza",
+      "name": "PDRN Hydrating Gel Cleanser 200ml",
+      "price": "$ 38.000",
+      "img": "medicube/espuma-limpiadora-medicube-pdrn-hydrating-gel-8211-200ml-2165107-Photoroom.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Limpieza",
+      "name": "Kojic Acid Turmeric Toning Cleanser 120g",
+      "price": "$ 32.000",
+      "img": "medicube/kojic-turmeric-toning-cleanser.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tónico",
+      "name": "Age-R Glutathione Glow Toner 140ml",
+      "price": "$ 33.000",
+      "img": "medicube/age-r-glutathione-glow-toner.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tónico",
+      "name": "Collagen Triple Toner 140ml",
+      "price": "$ 27.500",
+      "img": "medicube/collagen-triple-toner.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tratamiento",
+      "name": "Deep Vita C Capsule Serum 30ml",
+      "price": "$ 34.500",
+      "img": "medicube/serum-medicube-deep-vita-c-capsule-8211-30ml-2170518-Photoroom.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tratamiento",
+      "name": "Deep Vita C Capsule Cream 55g",
+      "price": "$ 36.500",
+      "img": "medicube/medicube-deep-vita-c-capsule-cream-b9d7f7818f5b22cbcf17574471340736-1024-1024-Photoroom.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tratamiento",
+      "name": "Deep Vita C Pad 70u",
+      "price": "$ 29.500",
+      "img": "medicube/MEDICUBE-Deep-Vita-C-Pad-70pcs-150g-PURESEOUL-UK-KBeauty-Shop-1-Photoroom.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tratamiento",
+      "name": "Deep Vita A Retinol Serum 30ml",
+      "price": "$ 33.000",
+      "img": "medicube/Medicube-Deep-Vita-A-Retinol-Serum-2-Photoroom.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tratamiento",
+      "name": "Age-R Vita C Pro Ampoule 20ml",
+      "price": "$ 42.000",
+      "img": "medicube/medicube-age-r-vita-c-pro-ampoule-20ml-5-Photoroom.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tratamiento",
+      "name": "Deep Lift Peptide Eye Cream 30ml",
+      "price": "$ 42.000",
+      "img": "medicube/medicube-deep-lifting-peptide-eye-cream-3e6f940559a3d6c0fa17574462549209-1024-1024-Photoroom.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tratamiento",
+      "name": "Hyalu Multi Peptide Serum 30ml",
+      "price": "$ 32.000",
+      "img": "medicube/hyalu-multi-peptide-serum.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tratamiento",
+      "name": "EGF NAD Firming Serum 30ml",
+      "price": "$ 44.000",
+      "img": "medicube/egf-nad-firming-serum.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tratamiento",
+      "name": "Hypochlorous Acid Peel Shot 80ml",
+      "price": "$ 42.000",
+      "img": "medicube/hypochlorous-acid-peel-shot.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tratamiento",
+      "name": "Kojic Acid Turmeric Niacinamide Serum 30ml",
+      "price": "$ 28.500",
+      "img": "medicube/serum-medicube-kojic-acid-turmeric-niacinamide-8211-30ml-2135130-Photoroom.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tratamiento",
+      "name": "Kojic Acid Turmeric Pads 70u",
+      "price": "$ 38.500",
+      "img": "medicube/KojicAcidTurmericPads_160ml-Photoroom.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tratamiento",
+      "name": "One Day Exosome Shot 2000 30ml",
+      "price": "$ 31.000",
+      "img": "medicube/PS160249-A-ONE-DAY-EXOSOME-SHOT-PORE-SERUM-2000-LACTO-30ML-Photoroom.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tratamiento",
+      "name": "One Day Exosome Shot 7500 30ml",
+      "price": "$ 32.500",
+      "img": "medicube/serum-facial-medicube-one-day-exosome-shot-7500-8211-30ml-1561417-Photoroom.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tratamiento",
+      "name": "PDRN Collagen Glow Jelly Serum 30ml",
+      "price": "$ 35.500",
+      "img": "medicube/pdrn-collagen-glow-jelly-serum.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Hidratación",
+      "name": "Collagen Jelly Cream 50ml",
+      "price": "$ 26.500",
+      "img": "medicube/medicube-collagen-jelly-cream-24c8d6754e8bec386617575368873121-1024-1024-Photoroom.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Hidratación",
+      "name": "Collagen Jelly Cream 110ml",
+      "price": "$ 31.000",
+      "img": "medicube/medicube-collagen-jelly-cream-24c8d6754e8bec386617575368873121-1024-1024-Photoroom.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Hidratación",
+      "name": "Hyalu Ceramide Jelly Cream 50ml",
+      "price": "$ 36.500",
+      "img": "medicube/Medicube-Hyaluronic-Ceramide-Jelly-Cream-2-Photoroom.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Hidratación",
+      "name": "Hyalu Moisturizing Capsule Cream 55g",
+      "price": "$ 36.500",
+      "img": "medicube/medicube-hyaluronic-moisturizing-capsule-cream-55g-2146316-Photoroom.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Hidratación",
+      "name": "3H Relief Cream 50ml",
+      "price": "$ 40.000",
+      "img": "medicube/3h-relief-cream.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Hidratación",
+      "name": "Age-R Glutathione Glow Capsule Cream 50ml",
+      "price": "$ 38.500",
+      "img": "medicube/age-r-glutathione-glow-capsule-cream.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Hidratación",
+      "name": "Kojic Acid Turmeric Vita Capsule Cream 53g",
+      "price": "$ 38.000",
+      "img": "medicube/kojic-turmeric-vita-capsule-cream.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Mascarilla",
+      "name": "Collagen Milk Toning Wrapping Mask 75ml",
+      "price": "$ 34.500",
+      "img": "medicube/mascarilla-facial-medicube-collagen-milk-toning-wrapping-mask-8211-75-ml-1590631-Photoroom.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Mascarilla",
+      "name": "PDRN Caffeine Night Wrapping Mask 75ml",
+      "price": "$ 31.000",
+      "img": "medicube/MEDICUBEPDRNPinkCaffeineNightWrappingMask75ml_01-Photoroom.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Mascarilla",
+      "name": "Deep Vita C Glutathione Mask 1u",
+      "price": "$ 13.000",
+      "img": "medicube/deep-vita-c-glutathione-mask.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Mascarilla",
+      "name": "Deep Peptide Radiance Mask 1u",
+      "price": "$ 12.000",
+      "img": "medicube/deep-peptide-radiance-mask.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Mascarilla",
+      "name": "Kojic Acid Turmeric Gel Mask 4u",
+      "price": "$ 38.500",
+      "img": "medicube/kojic-turmeric-gel-mask.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Accesorio",
+      "name": "Pincel Multi Head Pore",
+      "price": "$ 18.000",
+      "img": "medicube/pincel-multi-head-pore.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Mascarilla",
+      "name": "Zero Pore Cooling Mask 1u",
+      "price": "$ 10.500",
+      "img": "medicube/zero-pore-cooling-mask.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Mascarilla",
+      "name": "PDRN Pink Tension Up Mask 4u",
+      "price": "$ 44.000",
+      "img": "medicube/pdrn-pink-tension-up-mask.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Mascarilla",
+      "name": "PDRN Pink Peptide Serum Mask 10u",
+      "price": "$ 45.500",
+      "img": "medicube/pdrn-pink-peptide-serum-mask.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Mascarilla",
+      "name": "PDRN Pink Vita Coating Mask 1u",
+      "price": "$ 12.000",
+      "img": "medicube/pdrn-pink-vita-coating-mask-1u.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Mascarilla",
+      "name": "PDRN Pink Vita Coating Mask 10u",
+      "price": "$ 38.500",
+      "img": "medicube/pdrn-pink-vita-coating-mask-10u.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Mascarilla",
+      "name": "Zero Pore Blackhead Mud Mask 100g",
+      "price": "$ 27.000",
+      "img": "medicube/zero-pore-blackhead-mud-mask.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Limpieza",
+      "name": "Zero Foam Cleanser 120g",
+      "price": "$ 35.500",
+      "img": "medicube/zero-foam-cleanser.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Limpieza",
+      "name": "Zero Pore Blackhead Cleansing Oil 205ml",
+      "price": "$ 40.000",
+      "img": "medicube/zero-pore-blackhead-cleansing-oil.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Limpieza",
+      "name": "PDRN Pink Glutathione Cleansing Foam 120g",
+      "price": "$ 40.000",
+      "img": "medicube/pdrn-pink-glutathione-cleansing-foam.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Limpieza",
+      "name": "PDRN Pink Niacinamide Whip Cleanser 120g",
+      "price": "$ 41.000",
+      "img": "medicube/pdrn-pink-niacinamide-whip-cleanser.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Limpieza",
+      "name": "Zero Pore SA Clear Capsule Cleansing Foam 120g",
+      "price": "$ 33.000",
+      "img": "medicube/zero-pore-sa-cleansing-foam.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tónico",
+      "name": "PDRN Pink Cica Soothing Toner 250ml",
+      "price": "$ 33.000",
+      "img": "medicube/pdrn-pink-cica-soothing-toner.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tónico",
+      "name": "Zero Pore Toner 250ml",
+      "price": "$ 44.000",
+      "img": "medicube/zero-pore-toner.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tónico",
+      "name": "PDRN Pink Collagen Toning Gel Toner 70u",
+      "price": "$ 34.000",
+      "img": "medicube/pdrn-pink-collagen-toning-gel-toner.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tratamiento",
+      "name": "Zero Pore Pad Mild 70u",
+      "price": "$ 31.000",
+      "img": "medicube/zero-pore-pad-mild.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tratamiento",
+      "name": "Zero Pore Peel 8 Pads",
+      "price": "$ 28.500",
+      "img": "medicube/zero-pore-peel-pads.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tratamiento",
+      "name": "PDRN Pink Collagen Bubble Serum 95ml",
+      "price": "$ 44.000",
+      "img": "medicube/pdrn-pink-collagen-bubble-serum.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tratamiento",
+      "name": "PDRN Pink Collagen Exosome Shot 2000 30ml",
+      "price": "$ 32.000",
+      "img": "medicube/pdrn-pink-exosome-shot-2000.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tratamiento",
+      "name": "PDRN Pink Collagen Exosome Shot 7500 30ml",
+      "price": "$ 31.000",
+      "img": "medicube/pdrn-pink-exosome-shot-7500.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tratamiento",
+      "name": "PDRN Ultra Light Pink Peptide Serum 30ml",
+      "price": "$ 36.500",
+      "img": "medicube/pdrn-ultra-light-pink-peptide-serum.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tratamiento",
+      "name": "Zero Pore Serum 2.0 37ml",
+      "price": "$ 31.000",
+      "img": "medicube/zero-pore-serum-20.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tratamiento",
+      "name": "Zero Pore One Day Peptide Serum 30ml",
+      "price": "$ 34.500",
+      "img": "medicube/zero-pore-one-day-peptide-serum.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tratamiento",
+      "name": "Zero Pore Moisture Sun Serum 50ml SPF50+",
+      "price": "$ 32.500",
+      "img": "medicube/zero-pore-moisture-sun-serum.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Hidratación",
+      "name": "Zero Pore One Day Cream 50ml",
+      "price": "$ 34.500",
+      "img": "medicube/zero-pore-one-day-cream.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Hidratación",
+      "name": "Zero Pore Cream 2.0 50ml",
+      "price": "$ 42.000",
+      "img": "medicube/zero-pore-cream-20.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Hidratación",
+      "name": "PDRN Pink Hyalu Moisturizing Cream 50ml",
+      "price": "$ 29.000",
+      "img": "medicube/pdrn-pink-hyalu-moisturizing-cream.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tratamiento",
+      "name": "PDRN Pink Peptide Eye Cream 30ml",
+      "price": "$ 38.500",
+      "img": "medicube/pdrn-pink-peptide-eye-cream.webp"
+    },
+    {
+      "brand": "Medicube",
+      "cat": "Tratamiento",
+      "name": "PDRN Collagen Gua Sha Neck Wrinkle Cream 90g",
+      "price": "$ 58.500",
+      "img": "medicube/PDRN_00_8ff884c9-74a9-495e-917f-d03f776b38aa-Photoroom.webp"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MIZU Korean Skincare</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&family=Noto+Serif+JP:wght@300;400&display=swap">
+<link rel="stylesheet" href="styles.css">
+
+<nav id="nav">
+  <a href="#top" class="brand lockup lockup--nav" aria-label="MIZU">
+    <span class="ll-letter">M</span>
+    <span class="ll-mid"><span class="ll-i"></span><span class="jp ll-sui">水</span></span>
+    <span class="ll-letter">ZU</span>
+  </a>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links" id="nav-links">
+    <a href="#productos">Productos</a>
+    <a href="#ritual">El ritual</a>
+    <a href="#nosotras">Nosotras</a>
+    <a href="#contacto">Contacto</a>
+    <a href="https://instagram.com/mizuskincare" class="nav-ig" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+    </a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-water"></div>
+  <div class="hero-inner">
+    <span class="eyebrow">Korean Skincare</span>
+    <h1 class="hero-logo-wrap">
+      <img class="hero-logo" src="logo-header.png" alt="MIZU" width="1400" height="900">
+    </h1>
+    <div class="hero-sub">みず &nbsp;·&nbsp; skincare inspired by nature</div>
+    <p class="hero-tag">Piel limpia, hidratada y luminosa. Más que skincare, es un ritual.</p>
+    <div class="hero-cta">
+      <a href="#productos" class="btn">Ver productos</a>
+      <a href="#ritual" class="btn btn--ghost">Descubrir el ritual</a>
+    </div>
+  </div>
+</header>
+
+<section class="ritual-band" id="nosotras">
+  <span class="jp-big" aria-hidden="true">水</span>
+  <div class="wrap reveal">
+    <span class="eyebrow">Nuestra filosofía</span>
+    <blockquote>El agua limpia, calma y <em>renueva</em>. Cuidamos tu piel como ella.</blockquote>
+  </div>
+</section>
+
+<section id="productos">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">La colección</span>
+      <h2>Productos destacados</h2>
+      <p>Fórmulas coreanas de textura ligera, con ingredientes que hidratan en profundidad y respetan la barrera de tu piel.</p>
+    </div>
+    <div class="prod-grid" id="prod-grid"></div>
+  </div>
+</section>
+
+<section class="rutina" id="ritual">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">El ritual · 5 pasos</span>
+      <h2>La rutina coreana</h2>
+      <p>Un gesto sencillo, repetido cada día. Cinco pasos para una piel serena y luminosa.</p>
+    </div>
+    <div class="steps reveal" id="steps"></div>
+  </div>
+</section>
+
+<section class="connect" id="contacto">
+  <div class="wrap reveal">
+    <span class="eyebrow">Sumate al ritual</span>
+    <h2>Cuidá tu piel,<br>honrá tu esencia</h2>
+    <p>Recibí rutinas, tips y lanzamientos antes que nadie. Sin spam, solo skincare.</p>
+    <form class="subscribe" id="sub-form" novalidate>
+      <label for="email" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Email</label>
+      <input id="email" name="email" type="email" placeholder="tu@email.com" autocomplete="email">
+      <button class="btn" type="submit">Suscribirme</button>
+    </form>
+    <p class="form-note" id="form-note" role="status" aria-live="polite"></p>
+    <p class="connect-alt">
+      O escribinos por
+      <a href="https://instagram.com/mizuskincare">Instagram</a> ·
+      <a href="https://wa.me/">WhatsApp</a>
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-grid">
+    <div>
+      <div class="foot-brand">MIZU</div>
+      <p>Korean skincare inspirado en la naturaleza. Buenos Aires, Argentina.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Tienda</h4>
+      <a href="#productos">Limpieza</a>
+      <a href="#productos">Esencias</a>
+      <a href="#productos">Serums</a>
+      <a href="#productos">Hidratación</a>
+    </div>
+    <div class="foot-col">
+      <h4>MIZU</h4>
+      <a href="#nosotras">Nosotras</a>
+      <a href="#ritual">El ritual</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <div class="foot-col">
+      <h4>Seguinos</h4>
+      <a href="https://instagram.com/mizuskincare">Instagram</a>
+      <a href="https://wa.me/">WhatsApp</a>
+      <a href="mailto:hola@mizuskincare.com">Email</a>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 MIZU · みず</span>
+    <span>Piel limpia, hidratada y luminosa</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
