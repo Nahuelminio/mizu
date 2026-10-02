@@ -15,8 +15,8 @@ fetch('productos.json', { cache: 'no-store' })
     document.getElementById('prod-grid').innerHTML = products.map(p => {
       const msg = encodeURIComponent(`Hola MIZU! Me interesa el ${p.name} de ${p.brand} (${p.price}) 🤍`);
       return `
-      <article class="prod reveal">
-        <div class="prod-fig"><img src="img/productos/${p.img}" alt="${p.brand} ${p.name}" loading="lazy"></div>
+      <article class="prod reveal" data-sku="${p.sku || ''}">
+        <div class="prod-fig"><img src="img/productos/${p.img}" alt="${p.brand} ${p.name}" loading="lazy"><span class="agotado-badge">Sin stock</span></div>
         <span class="prod-cat">${p.cat} · ${p.brand}</span>
         <h3>${p.name}</h3>
         <p>${p.desc || '&nbsp;'}</p>
@@ -27,10 +27,29 @@ fetch('productos.json', { cache: 'no-store' })
       </article>`;
     }).join('');
     observeReveals(document.getElementById('prod-grid'));
+    aplicarStock();
   })
   .catch(() => {
     document.getElementById('prod-grid').innerHTML = '<p style="grid-column:1/-1;text-align:center;color:var(--ink-soft)">No se pudieron cargar los productos.</p>';
   });
+
+// ---- Disponibilidad de stock (lee del sistema de gestión) ----
+function aplicarStock(){
+  fetch('estado.php', { cache: 'no-store' })
+    .then(r => r.json())
+    .then(d => {
+      if (!d || !d.ok || !d.stock) return;
+      document.querySelectorAll('#prod-grid .prod[data-sku]').forEach(el => {
+        const sku = el.getAttribute('data-sku');
+        if (sku && sku in d.stock && d.stock[sku] === false) {
+          el.classList.add('agotado');
+          const b = el.querySelector('.prod-add');
+          if (b) { b.textContent = 'Sin stock'; b.removeAttribute('href'); b.setAttribute('aria-disabled','true'); }
+        }
+      });
+    })
+    .catch(() => {}); // si no hay conexión, la tienda se ve normal
+}
 
 // ---- Routine steps ----
 const steps = [

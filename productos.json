@@ -6,7 +6,8 @@
       "name": "Rice Enzyme Cleansing Powder",
       "desc": "Polvo limpiador enzimático con arroz. Ilumina y suaviza la textura.",
       "price": "$ 40.000",
-      "img": "anua/imagen1_anua_rice_enzyme_brightening_cleansing_powder_imagen1-Photoroom.webp"
+      "img": "anua/imagen1_anua_rice_enzyme_brightening_cleansing_powder_imagen1-Photoroom.webp",
+      "sku": "rice-enzyme"
     },
     {
       "brand": "Biodance",
@@ -14,7 +15,8 @@
       "name": "Cera-Nol Gel Toner Pads",
       "desc": "Discos de tónico en gel con ceramidas. Hidratan y calman (60 u.).",
       "price": "$ 44.000",
-      "img": "biodance/biodance-cera-nol-gel-Photoroom.webp"
+      "img": "biodance/biodance-cera-nol-gel-Photoroom.webp",
+      "sku": "cera-nol"
     },
     {
       "brand": "SKIN1004",
@@ -22,7 +24,8 @@
       "name": "Centella Ampoule",
       "desc": "Ampolla intensiva con centella pura de Madagascar. Calma y repara.",
       "price": "$ 56.500",
-      "img": "centella/madagascar-centella-Photoroom.webp"
+      "img": "centella/madagascar-centella-Photoroom.webp",
+      "sku": "centella-ampoule"
     },
     {
       "brand": "ANUA",
@@ -30,7 +33,8 @@
       "name": "Peach 70+ Niacin Serum",
       "desc": "Serum con 70% de durazno y niacinamida. Ilumina y unifica el tono.",
       "price": "$ 40.000",
-      "img": "anua/157784-a-peach-70-niacin-serum-30ml-Photoroom.webp"
+      "img": "anua/157784-a-peach-70-niacin-serum-30ml-Photoroom.webp",
+      "sku": "peach-serum"
     },
     {
       "brand": "Celimax",
@@ -38,7 +42,8 @@
       "name": "Retinal Shot Booster",
       "desc": "Booster con retinal que reafirma y suaviza líneas finas (15 ml).",
       "price": "$ 37.500",
-      "img": "images-Photoroom.webp"
+      "img": "images-Photoroom.webp",
+      "sku": "retinal-shot"
     },
     {
       "brand": "Medicube",
@@ -46,7 +51,8 @@
       "name": "Deep Vita C Capsule Cream",
       "desc": "Crema con vitamina C y niacinamida para una piel luminosa y uniforme.",
       "price": "$ 48.000",
-      "img": "medicube/medicube-deep-vita-c-capsule-cream-b9d7f7818f5b22cbcf17574471340736-1024-1024-Photoroom.webp"
+      "img": "medicube/medicube-deep-vita-c-capsule-cream-b9d7f7818f5b22cbcf17574471340736-1024-1024-Photoroom.webp",
+      "sku": "deep-vita-c-cream"
     },
     {
       "brand": "Dr.Althea",
@@ -54,7 +60,8 @@
       "name": "345 Relief Cream",
       "desc": "Crema calmante con niacinamida y centella para piel sensible.",
       "price": "$ 46.000",
-      "img": "drALTHEA345REFIEF-Photoroom.webp"
+      "img": "drALTHEA345REFIEF-Photoroom.webp",
+      "sku": "althea-345"
     },
     {
       "brand": "Medicube",
@@ -62,7 +69,8 @@
       "name": "Collagen Jelly Cream",
       "desc": "Crema-jelly con colágeno. Hidrata y aporta elasticidad (50 ml).",
       "price": "$ 30.500",
-      "img": "medicube/medicube-collagen-jelly-cream-24c8d6754e8bec386617575368873121-1024-1024-Photoroom.webp"
+      "img": "medicube/medicube-collagen-jelly-cream-24c8d6754e8bec386617575368873121-1024-1024-Photoroom.webp",
+      "sku": "collagen-jelly"
     },
     {
       "brand": "Medicube",
@@ -70,7 +78,8 @@
       "name": "PDRN Collagen Gua Sha",
       "desc": "Crema con PDRN y colágeno + gua sha para cuello y contorno.",
       "price": "$ 67.000",
-      "img": "medicube/PDRN_00_8ff884c9-74a9-495e-917f-d03f776b38aa-Photoroom.webp"
+      "img": "medicube/PDRN_00_8ff884c9-74a9-495e-917f-d03f776b38aa-Photoroom.webp",
+      "sku": "pdrn-gua-sha"
     },
     {
       "brand": "Biodance",
@@ -78,7 +87,8 @@
       "name": "Bio-Collagen Real Deep Mask",
       "desc": "Mascarilla de bio-colágeno que se adhiere a la piel. Hidrata y reafirma. Precio por unidad.",
       "price": "$ 12.000",
-      "img": "biodance/collagenmask4-Photoroom.webp"
+      "img": "biodance/collagenmask4-Photoroom.webp",
+      "sku": "bio-collagen"
     },
     {
       "brand": "SKIN1004",
@@ -86,7 +96,8 @@
       "name": "Centella Travel Kit",
       "desc": "Rutina completa en tamaño viaje: limpieza, tónico, ampolla y crema.",
       "price": "$ 61.500",
-      "img": "centella/CENTELLATRAVELKIT-2-Photoroom.webp"
+      "img": "centella/CENTELLATRAVELKIT-2-Photoroom.webp",
+      "sku": "centella-kit"
     },
     {
       "brand": "SKIN1004",
@@ -94,7 +105,8 @@
       "name": "Hyalu-Cica Travel Kit",
       "desc": "Kit de viaje hidratante con ácido hialurónico y centella.",
       "price": "$ 60.500",
-      "img": "centella/centella-kit-1-Photoroom.webp"
+      "img": "centella/centella-kit-1-Photoroom.webp",
+      "sku": "hyalu-kit"
     }
   ],
   "mayorista": [

@@ -261,6 +261,18 @@ section { padding: clamp(4.5rem, 10vw, 8rem) clamp(1.25rem, 6vw, 5rem); }
 }
 .prod-add:hover { background: var(--deep); color: var(--cream); border-color: var(--deep); }
 
+/* ---------- Sin stock ---------- */
+.prod-fig { position: relative; }
+.agotado-badge { display: none; }
+.prod.agotado .prod-fig img { opacity: .4; filter: grayscale(.35); }
+.prod.agotado .agotado-badge {
+  display: inline-block; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+  background: var(--ink); color: var(--cream); font-family: "Jost", sans-serif;
+  text-transform: uppercase; letter-spacing: .22em; font-size: .6rem; padding: .55em 1.1em; border-radius: 999px; white-space: nowrap;
+}
+.prod.agotado h3, .prod.agotado .prod-price, .prod.agotado .prod-cat, .prod.agotado p { opacity: .55; }
+.prod-add[aria-disabled="true"] { opacity: .5; pointer-events: none; border-color: var(--line); color: var(--ink-soft); background: transparent; }
+
 /* ---------- RUTINA (steps) ---------- */
 .rutina { background: color-mix(in srgb, var(--cream) 45%, transparent); }
 .steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; border-top: 1px solid var(--line); }
