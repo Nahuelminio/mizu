@@ -272,6 +272,12 @@ section { padding: clamp(4.5rem, 10vw, 8rem) clamp(1.25rem, 6vw, 5rem); }
 }
 .prod.agotado h3, .prod.agotado .prod-price, .prod.agotado .prod-cat, .prod.agotado p { opacity: .55; }
 .prod-add[aria-disabled="true"] { opacity: .5; pointer-events: none; border-color: var(--line); color: var(--ink-soft); background: transparent; }
+.prod-add.encargar { background: transparent; color: var(--deep); border-color: var(--deep); }
+.prod-add.encargar:hover { background: var(--deep); color: var(--cream); }
+.prod.agotado .prod-foot { opacity: 1; }
+.prod.agotado .prod-price { opacity: .55; }
+.apedido-note { text-align: center; max-width: 46ch; margin: 2rem auto 0; color: var(--ink-soft); font-size: .9rem; line-height: 1.6; }
+.apedido-note b { color: var(--ink); font-weight: 500; }
 
 /* ---------- RUTINA (steps) ---------- */
 .rutina { background: color-mix(in srgb, var(--cream) 45%, transparent); }

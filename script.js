@@ -39,14 +39,24 @@ function aplicarStock(){
     .then(r => r.json())
     .then(d => {
       if (!d || !d.ok || !d.stock) return;
+      let hayAgotados = false;
       document.querySelectorAll('#prod-grid .prod[data-sku]').forEach(el => {
         const sku = el.getAttribute('data-sku');
         if (sku && sku in d.stock && d.stock[sku] === false) {
           el.classList.add('agotado');
+          hayAgotados = true;
           const b = el.querySelector('.prod-add');
-          if (b) { b.textContent = 'Sin stock'; b.removeAttribute('href'); b.setAttribute('aria-disabled','true'); }
+          if (b) {
+            const name = el.querySelector('h3')?.textContent || 'producto';
+            const msg = encodeURIComponent(`Hola MIZU! El ${name} está sin stock, ¿lo pueden conseguir a pedido? 🤍`);
+            b.textContent = 'Encargar';
+            b.setAttribute('href', `https://wa.me/${WA}?text=${msg}`);
+            b.classList.add('encargar');
+          }
         }
       });
+      const nota = document.getElementById('apedido-note');
+      if (nota && hayAgotados) nota.hidden = false;
     })
     .catch(() => {}); // si no hay conexión, la tienda se ve normal
 }
