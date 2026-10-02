@@ -4,6 +4,11 @@
 # Temporales / build
 dist/
 mizu-web.zip
+mizu-gestion.zip
+
+# Panel de gestión (tiene credenciales en config.php). Se sube a mano al servidor, NO a GitHub.
+gestion-php/
+gestion.html
 
 # Originales sin usar (la web usa los .webp)
 mizulogo2.png

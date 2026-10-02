@@ -7,59 +7,50 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: .12 });
 const observeReveals = (root) => (root || document).querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-// ---- Products (from productos.json → minorista) ----
-fetch('productos.json', { cache: 'no-store' })
-  .then(r => r.json())
-  .then(data => {
-    const products = (data && data.minorista) || [];
-    document.getElementById('prod-grid').innerHTML = products.map(p => {
-      const msg = encodeURIComponent(`Hola MIZU! Me interesa el ${p.name} de ${p.brand} (${p.price}) 🤍`);
-      return `
-      <article class="prod reveal" data-sku="${p.sku || ''}">
-        <div class="prod-fig"><img src="img/productos/${p.img}" alt="${p.brand} ${p.name}" loading="lazy"><span class="agotado-badge">Sin stock</span></div>
-        <span class="prod-cat">${p.cat} · ${p.brand}</span>
+// ---- Catálogo (desde el sistema de gestión; fallback a productos.json) ----
+const money = p => (typeof p === 'number') ? '$ ' + Math.round(p).toLocaleString('es-AR') : (p || '');
+function renderProductos(list){
+  const grid = document.getElementById('prod-grid');
+  grid.innerHTML = list.map(p => {
+    const precio = money(p.price);
+    const sinStock = (typeof p.stock === 'number') && p.stock <= 0;
+    const fig = p.img
+      ? `<img src="img/productos/${p.img}" alt="${p.brand||''} ${p.name}" loading="lazy">`
+      : `<div class="prod-ph jp" aria-hidden="true">水</div>`;
+    const msgOk = encodeURIComponent(`Hola MIZU! Me interesa el ${p.name} de ${p.brand||''} (${precio}) 🤍`);
+    const msgEnc = encodeURIComponent(`Hola MIZU! El ${p.name} está sin stock, ¿lo pueden conseguir a pedido? 🤍`);
+    const btn = sinStock
+      ? `<a class="prod-add encargar" href="https://wa.me/${WA}?text=${msgEnc}" target="_blank" rel="noopener">Encargar</a>`
+      : `<a class="prod-add" href="https://wa.me/${WA}?text=${msgOk}" target="_blank" rel="noopener">Consultar</a>`;
+    return `
+      <article class="prod reveal${sinStock ? ' agotado' : ''}" data-sku="${p.id || p.sku || ''}">
+        <div class="prod-fig">${fig}<span class="agotado-badge">Sin stock</span></div>
+        <span class="prod-cat">${p.cat || ''}${p.brand ? ' · ' + p.brand : ''}</span>
         <h3>${p.name}</h3>
         <p>${p.desc || '&nbsp;'}</p>
         <div class="prod-foot">
-          <span class="prod-price">${p.price}</span>
-          <a class="prod-add" href="https://wa.me/${WA}?text=${msg}" target="_blank" rel="noopener">Consultar</a>
+          <span class="prod-price">${precio}</span>
+          ${btn}
         </div>
       </article>`;
-    }).join('');
-    observeReveals(document.getElementById('prod-grid'));
-    aplicarStock();
+  }).join('');
+  observeReveals(grid);
+  const nota = document.getElementById('apedido-note');
+  if (nota && list.some(p => typeof p.stock === 'number' && p.stock <= 0)) nota.hidden = false;
+}
+fetch('catalogo.php', { cache: 'no-store' })
+  .then(r => r.json())
+  .then(d => {
+    if (d && d.ok && Array.isArray(d.productos) && d.productos.length) renderProductos(d.productos);
+    else throw new Error('catalogo vacío');
   })
   .catch(() => {
-    document.getElementById('prod-grid').innerHTML = '<p style="grid-column:1/-1;text-align:center;color:var(--ink-soft)">No se pudieron cargar los productos.</p>';
+    // Fallback: archivo estático (sin stock en vivo)
+    fetch('productos.json', { cache: 'no-store' })
+      .then(r => r.json())
+      .then(d => renderProductos((d && d.minorista) || []))
+      .catch(() => { document.getElementById('prod-grid').innerHTML = '<p style="grid-column:1/-1;text-align:center;color:var(--ink-soft)">No se pudieron cargar los productos.</p>'; });
   });
-
-// ---- Disponibilidad de stock (lee del sistema de gestión) ----
-function aplicarStock(){
-  fetch('estado.php', { cache: 'no-store' })
-    .then(r => r.json())
-    .then(d => {
-      if (!d || !d.ok || !d.stock) return;
-      let hayAgotados = false;
-      document.querySelectorAll('#prod-grid .prod[data-sku]').forEach(el => {
-        const sku = el.getAttribute('data-sku');
-        if (sku && sku in d.stock && d.stock[sku] === false) {
-          el.classList.add('agotado');
-          hayAgotados = true;
-          const b = el.querySelector('.prod-add');
-          if (b) {
-            const name = el.querySelector('h3')?.textContent || 'producto';
-            const msg = encodeURIComponent(`Hola MIZU! El ${name} está sin stock, ¿lo pueden conseguir a pedido? 🤍`);
-            b.textContent = 'Encargar';
-            b.setAttribute('href', `https://wa.me/${WA}?text=${msg}`);
-            b.classList.add('encargar');
-          }
-        }
-      });
-      const nota = document.getElementById('apedido-note');
-      if (nota && hayAgotados) nota.hidden = false;
-    })
-    .catch(() => {}); // si no hay conexión, la tienda se ve normal
-}
 
 // ---- Routine steps ----
 const steps = [
